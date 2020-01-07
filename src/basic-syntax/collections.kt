@@ -1,3 +1,5 @@
+package `basic-syntax`
+
 fun main() {
     val items = listOf("apple", "banana", "kiwifruit", "avocado")
     forCollection(items)

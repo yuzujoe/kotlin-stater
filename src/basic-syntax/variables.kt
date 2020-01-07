@@ -1,3 +1,5 @@
+package `basic-syntax`
+
 //Read-only local variables are defined using the keyword val. They can be assigned a value only once.
 fun readOnlyVal() {
     val a: Int = 1  // immediate assignment

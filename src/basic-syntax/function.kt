@@ -1,3 +1,5 @@
+package `basic-syntax`
+
 //Function having two Int parameters with Int return type:
 fun sum(a: Int, b: Int): Int {
     return a + b
@@ -7,19 +9,19 @@ fun inferredSum(a: Int, b: Int) = a + b
 
 //Function returning no meaningful value:
 fun printSum(a: Int, b: Int): Unit {
-    println("sum of $a and $b is ${a + b}")
+    println("`basic-syntax`.sum of $a and $b is ${a + b}")
 }
 
 //Unit return type can be omitted:
 fun printOmitSum(a: Int, b: Int) {
-    println("sum of $a and $b is ${a + b}")
+    println("`basic-syntax`.sum of $a and $b is ${a + b}")
 }
 
 
 fun main() {
-    print("sum of 3 and 5 is ")
-    println(sum(2,3))
-    println("sum of 19 and 23 is ${inferredSum(19, 23)}")
+    print("`basic-syntax`.sum of 3 and 5 is ")
+    println(sum(2, 3))
+    println("`basic-syntax`.sum of 19 and 23 is ${inferredSum(19, 23)}")
     printSum(-1, 8)
     printOmitSum(-1, 8)
 }

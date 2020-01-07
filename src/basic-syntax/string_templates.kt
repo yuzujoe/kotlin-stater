@@ -1,3 +1,5 @@
+package `basic-syntax`
+
 import kotlin.text.replace as replace1
 
 fun main() {

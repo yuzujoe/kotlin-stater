@@ -1,3 +1,5 @@
+package `basic-syntax`
+
 fun describe(obj: Any): String {
     return when (obj) {
         1          -> "One"
