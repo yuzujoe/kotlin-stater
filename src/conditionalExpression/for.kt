@@ -7,5 +7,5 @@ fun main() {
     }
 
     // range loop
-    for (i in 1 .. 100) print(i)
+//    for (i in 1 .. 100) print(i)
 }
