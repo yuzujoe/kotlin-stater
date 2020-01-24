@@ -15,12 +15,12 @@ fun combine(separator: String, vararg strings: String) : String {
 }
 
 // this case is occur error no value passed for parameter separator
-fun combine2( vararg strings: String, separator: String,) : String {
-    val builder = StringBuilder()
-
-    for (str in strings) {
-        builder.append(str).append(separator)
-    }
-
-    return  builder.removeSuffix(separator).toString()
-}
+//fun combine2( vararg strings: String, separator: String,) : String {
+//    val builder = StringBuilder()
+//
+//    for (str in strings) {
+//        builder.append(str).append(separator)
+//    }
+//
+//    return  builder.removeSuffix(separator).toString()
+//}
