@@ -1,8 +1,16 @@
 package `class`
 // Class without open cannot be inherited
-open class Animal(val name: String) {
-    open fun sleep() = print("$name sleeps")
+//In addition to interfaces, there is an abstract class as a mechanism to correct the implementation of a method into a class.
+//You can create an abstract class with the abstruct modifier
+//Open modifier is not required because inheritance is assumed from the beginning
+abstract class Animal(val name: String) {
+    abstract fun sleep()
 }
+
+class Rabbit(name : String) : Animal(name) {
+    override fun sleep() = print("$name sleeps")
+}
+
 //The open qualifier is not required because the interface methods and properties are assumed to be overridden.
 //Override method must have override qualifier
 interface Pet {
@@ -24,4 +32,7 @@ fun main() {
 
     val shiro = Dog("Shiro")
     println(shiro.feed("beef"))
+
+    val rabi = Rabbit("Rabi")
+    println(rabi.sleep())
 }
