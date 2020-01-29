@@ -12,4 +12,7 @@ fun main() {
     println(fruits.filter { it.price < 200 }
         .sortedBy { it.name }
         .map { "${it.name}:${it.price}" })
+
+    println(fruits.maxBy { it.price })
+    println(fruits.minBy { it.price })
 }
